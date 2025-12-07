@@ -1,10 +1,10 @@
 import { Github, Linkedin, Twitter, Facebook, Mail, Phone, MapPin } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Facebook, href: "#", label: "Facebook" },
+  { icon: Github, href: "https://github.com/crystalmaith", label: "GitHub", target: "_blank" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/maithili-sharma-306575240/", label: "LinkedIn", target: "_blank" },
+  { icon: Twitter, href: "https://twitter.com/maithilisharma", label: "Twitter", target: "_blank" },
+  { icon: Facebook, href: "https://www.facebook.com/maithili.sharma.12345", label: "Facebook", target: "_blank" },
 ];
 
 const FooterSection = () => {
