@@ -1,5 +1,12 @@
 import { useState, useEffect } from "react";
-import { Home, Briefcase, User, GraduationCap, Heart, Mail } from "lucide-react";
+import { Home, Briefcase, User, GraduationCap, Heart, Mail, Github, Linkedin, Twitter, Facebook } from "lucide-react";
+
+const socialLinks = [
+  { icon: Github, href: "https://github.com/crystalmaith", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/maithili-sharma-306575240/", label: "LinkedIn" },
+  { icon: Twitter, href: "https://twitter.com/maithilisharma", label: "Twitter" },
+  { icon: Facebook, href: "https://www.facebook.com/maithili.sharma.12345", label: "Facebook" },
+];
 
 const navItems = [
   { id: "home", label: "Home", icon: Home },
@@ -71,6 +78,27 @@ const SidebarNav = () => {
             </button>
           );
         })}
+      </div>
+      
+      {/* Social Media Links */}
+      <div className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-soft p-3 border border-border/50 mt-4">
+        <div className="flex flex-col gap-3">
+          {socialLinks.map((social) => {
+            const Icon = social.icon;
+            return (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+                aria-label={social.label}
+              >
+                <Icon className="w-5 h-5" />
+              </a>
+            );
+          })}
+        </div>
       </div>
     </nav>
   );

@@ -4,7 +4,7 @@ const socialLinks = [
   { icon: Github, href: "https://github.com/crystalmaith", label: "GitHub", target: "_blank" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/maithili-sharma-306575240/", label: "LinkedIn", target: "_blank" },
   { icon: Twitter, href: "https://twitter.com/maithilisharma", label: "Twitter", target: "_blank" },
-  { icon: Facebook, href: "https://www.facebook.com/maithili.sharma.12345", label: "Facebook", target: "_blank" },
+  { icon: Facebook, href: "https://www.facebook.com/maithili.sharma.52/", label: "Facebook", target: "_blank" },
 ];
 
 const FooterSection = () => {
@@ -30,10 +30,12 @@ const FooterSection = () => {
                   const Icon = social.icon;
                   return (
                     <a
-                      key={social.label}
+                      key={`left-${social.label}`}
                       href={social.href}
                       className="w-10 h-10 flex items-center justify-center rounded-full border border-primary-foreground/20 text-primary-foreground/70 hover:bg-primary-foreground hover:text-navy transition-all duration-300"
                       aria-label={social.label}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Icon className="w-5 h-5" />
                     </a>
@@ -44,9 +46,28 @@ const FooterSection = () => {
 
             {/* Right Column - Contact Info */}
             <div className="space-y-6">
-              <h3 className="font-serif text-xl font-medium tracking-wide text-primary-foreground/90">
-                Contact Information
-              </h3>
+              <div className="flex justify-between items-center">
+                <h3 className="font-serif text-xl font-medium tracking-wide text-primary-foreground/90">
+                  Contact Information
+                </h3>
+                <div className="flex gap-3">
+                  {socialLinks.map((social) => {
+                    const Icon = social.icon;
+                    return (
+                      <a
+                        key={`right-${social.label}`}
+                        href={social.href}
+                        className="w-8 h-8 flex items-center justify-center rounded-full border border-primary-foreground/20 text-primary-foreground/70 hover:bg-primary-foreground hover:text-navy transition-all duration-300"
+                        aria-label={social.label}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Icon className="w-4 h-4" />
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
               
               <div className="space-y-4">
                 <a
