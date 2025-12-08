@@ -1,11 +1,4 @@
-import { Github, Linkedin, Twitter, Facebook, MapPin } from "lucide-react";
-
-const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Facebook, href: "#", label: "Facebook" },
-];
+import { MapPin } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -19,23 +12,6 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Social Icons - Floating Right */}
-          <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-4">
-            {socialLinks.map((social, index) => {
-              const Icon = social.icon;
-              return (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  className="icon-social opacity-0 animate-slide-in-left"
-                  style={{ animationDelay: `${800 + index * 100}ms` }}
-                  aria-label={social.label}
-                >
-                  <Icon className="w-5 h-5" />
-                </a>
-              );
-            })}
-          </div>
 
           {/* Main Content */}
           <div className="space-y-8">
@@ -62,22 +38,6 @@ const HeroSection = () => {
               </a>
             </div>
 
-            {/* Mobile Social Icons */}
-            <div className="flex justify-center gap-4 md:hidden pt-6 opacity-0 animate-fade-up" style={{ animationDelay: "1000ms" }}>
-              {socialLinks.map((social) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    className="icon-social"
-                    aria-label={social.label}
-                  >
-                    <Icon className="w-5 h-5" />
-                  </a>
-                );
-              })}
-            </div>
           </div>
         </div>
       </div>

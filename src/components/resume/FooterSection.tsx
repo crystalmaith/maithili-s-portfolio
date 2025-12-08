@@ -3,7 +3,7 @@ import { Github, Linkedin, Twitter, Facebook, Mail, Phone, MapPin } from "lucide
 const socialLinks = [
   { icon: Github, href: "https://github.com/crystalmaith", label: "GitHub", target: "_blank" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/maithili-sharma-306575240/", label: "LinkedIn", target: "_blank" },
-  { icon: Twitter, href: "https://twitter.com/maithilisharma", label: "Twitter", target: "_blank" },
+  { icon: Twitter, href: "https://twitter.com/elonmusk", label: "Twitter", target: "_blank" },
   { icon: Facebook, href: "https://www.facebook.com/maithili.sharma.52/", label: "Facebook", target: "_blank" },
 ];
 
