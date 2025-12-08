@@ -1,10 +1,10 @@
 import { Github, Linkedin, Twitter, Facebook, MapPin } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Facebook, href: "#", label: "Facebook" },
+  { icon: Github, href: "https://github.com/crystalmaith", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/maithili-sharma-306575240/", label: "LinkedIn" },
+  { icon: Twitter, href: "https://x.com/crystalmaithh", label: "Twitter" },
+  { icon: Facebook, href: "https://www.facebook.com/maithili.sharma.52/", label: "Facebook" },
 ];
 
 const HeroSection = () => {
@@ -25,8 +25,10 @@ const HeroSection = () => {
               const Icon = social.icon;
               return (
                 <a
-                  key={social.label}
+                  key={`desktop-${social.label}`}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="icon-social opacity-0 animate-slide-in-left"
                   style={{ animationDelay: `${800 + index * 100}ms` }}
                   aria-label={social.label}
@@ -68,8 +70,10 @@ const HeroSection = () => {
                 const Icon = social.icon;
                 return (
                   <a
-                    key={social.label}
+                    key={`mobile-${social.label}`}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="icon-social"
                     aria-label={social.label}
                   >
