@@ -71,7 +71,7 @@ const projects = [
     "A personal recipe management web app built for organizing, saving, and adding homemade baking recipes, with a warm, bakery-inspired UI designed for personal use.",
   tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
   bgColor: "bg-secondary",
-   projectUrl: "https://github.com/crystalmaith/maithilis-sweet-kitchen"
+   projectUrl: "https://maithilis-sweet-kitchen.vercel.app/"
 },
 
   {
