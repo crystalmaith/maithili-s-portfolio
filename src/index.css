@@ -176,4 +176,17 @@
   .text-teal { color: hsl(var(--teal)); }
   
   .border-sky-blue { border-color: hsl(var(--sky-blue)); }
+
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+  }
 }

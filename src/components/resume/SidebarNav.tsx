@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
 import { Home, Briefcase, User, GraduationCap, Heart, Mail } from "lucide-react";
 
+import { Code } from "lucide-react";
+
 const navItems = [
   { id: "home", label: "Home", icon: Home },
   { id: "projects", label: "Projects", icon: Briefcase },
+  { id: "skills", label: "Skills", icon: Code },
   { id: "about", label: "About Me", icon: User },
   { id: "education", label: "Education", icon: GraduationCap },
   { id: "hobbies", label: "Hobbies", icon: Heart },
