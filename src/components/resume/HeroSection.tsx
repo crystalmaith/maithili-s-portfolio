@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Facebook, MapPin } from "lucide-react";
+import { Github, Linkedin, Twitter, Facebook, MapPin, Download } from "lucide-react";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/crystalmaith", label: "GitHub" },
@@ -64,6 +64,14 @@ const HeroSection = () => {
               </a>
               <a href="#contact" className="btn-outline">
                 Get in Touch
+              </a>
+              <a 
+                href="/resume.pdf" 
+                download="Maithili_Sharma_Resume.pdf"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent text-accent-foreground font-sans text-sm uppercase tracking-[0.15em] rounded-lg hover:bg-accent/90 transition-all duration-300"
+              >
+                <Download className="w-4 h-4" />
+                Download CV
               </a>
             </div>
 
