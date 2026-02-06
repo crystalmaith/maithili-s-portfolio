@@ -9,8 +9,8 @@ const socialLinks = [
 
 const FooterSection = () => {
   return (
-    <footer id="contact" className="section-padding bg-navy text-primary-foreground">
-      <div className="container mx-auto">
+    <footer id="contact" className="relative section-padding bg-navy text-primary-foreground before:absolute before:inset-0 before:bg-navy before:-left-[100vw] before:w-[200vw]">
+      <div className="relative container mx-auto">
         <div className="max-w-5xl mx-auto">
           {/* Main Footer Content */}
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 mb-16">

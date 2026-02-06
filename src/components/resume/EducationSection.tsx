@@ -38,8 +38,8 @@ const education = [
 
 const EducationSection = () => {
   return (
-    <section id="education" className="section-padding bg-card">
-      <div className="container mx-auto">
+    <section id="education" className="relative section-padding bg-card before:absolute before:inset-0 before:bg-card before:-left-[100vw] before:w-[200vw]">
+      <div className="relative container mx-auto">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">

@@ -87,8 +87,8 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="section-padding bg-card">
-      <div className="container mx-auto">
+    <section id="projects" className="relative section-padding bg-card before:absolute before:inset-0 before:bg-card before:-left-[100vw] before:w-[200vw]">
+      <div className="relative container mx-auto">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
