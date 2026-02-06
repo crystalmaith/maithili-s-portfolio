@@ -46,7 +46,7 @@ const AboutSection = () => {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 pt-4 opacity-0 animate-fade-up" style={{ animationDelay: "600ms" }}>
+              <div className="grid grid-cols-2 gap-6 pt-4 opacity-0 animate-fade-up" style={{ animationDelay: "600ms" }}>
                 <div className="text-center lg:text-left">
                   <span className="block font-serif text-3xl text-primary">5+</span>
                   <span className="font-sans text-sm text-muted-foreground uppercase tracking-wider">Years Exp.</span>
@@ -54,10 +54,6 @@ const AboutSection = () => {
                 <div className="text-center lg:text-left">
                   <span className="block font-serif text-3xl text-primary">30+</span>
                   <span className="font-sans text-sm text-muted-foreground uppercase tracking-wider">Projects</span>
-                </div>
-                <div className="text-center lg:text-left">
-                  <span className="block font-serif text-3xl text-primary">0+</span>
-                  <span className="font-sans text-sm text-muted-foreground uppercase tracking-wider">Clients</span>
                 </div>
               </div>
             </div>
