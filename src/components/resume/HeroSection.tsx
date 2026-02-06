@@ -66,7 +66,7 @@ const HeroSection = () => {
                 Get in Touch
               </a>
               <a 
-                href="/resume.pdf" 
+                href="/Maithili_Resume.pdf" 
                 download="Maithili_Sharma_Resume.pdf"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent text-accent-foreground font-sans text-sm uppercase tracking-[0.15em] rounded-lg hover:bg-accent/90 transition-all duration-300"
               >
