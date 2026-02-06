@@ -44,9 +44,9 @@ const SkillsSection = () => {
     <section
       id="skills"
       ref={sectionRef}
-      className="section-padding bg-secondary"
+      className="relative section-padding bg-secondary before:absolute before:inset-0 before:bg-secondary before:-left-[100vw] before:w-[200vw]"
     >
-      <div className="container mx-auto">
+      <div className="relative container mx-auto">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
