@@ -1,7 +1,7 @@
 const AboutSection = () => {
   return (
-    <section id="about" className="section-padding bg-beige">
-      <div className="container mx-auto">
+    <section id="about" className="relative section-padding bg-beige before:absolute before:inset-0 before:bg-beige before:-left-[100vw] before:w-[200vw]">
+      <div className="relative container mx-auto">
         <div className="max-w-5xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Image Column */}

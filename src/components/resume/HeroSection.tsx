@@ -11,7 +11,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-beige"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-beige before:absolute before:inset-0 before:bg-beige before:-left-[100vw] before:w-[200vw] before:-z-10"
     >
       {/* Decorative Elements */}
       <div className="absolute top-20 right-20 w-64 h-64 bg-sky-blue rounded-full blur-3xl opacity-40 animate-float" />
