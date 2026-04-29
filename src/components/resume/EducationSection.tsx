@@ -28,9 +28,9 @@ const education = [
     years: "2007 - 2019",
     course: "Primary & Secondary Education (ICSE)",
     achievements: [
-      "100% in Computer Science — ICSE Board Examinations",
+      "100% in Computer Science, ICSE Board Examinations",
       "95% aggregate in Mathematics & Computer Science",
-      "Silver Medal — Bakers Basket Tennis Competition",
+      "Silver Medal, Bakers Basket Tennis Competition",
     ],
   },
 ];
