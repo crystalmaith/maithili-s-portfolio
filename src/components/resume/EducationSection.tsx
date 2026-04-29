@@ -7,7 +7,7 @@ const education = [
     years: "2022 - 2026",
     course: "Bachelor of Technology in Artificial Intelligence and Data Science",
     achievements: [
-      "AI/ML Intern at BP Optima — building LLM-powered automation systems",
+      "AI/ML Intern at BP Optima, building LLM-powered automation systems",
       "8.9 CGPA",
       "Member of GeeksForGeeks Campus Club",
     ],
