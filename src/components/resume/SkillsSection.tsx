@@ -7,7 +7,7 @@ const skills = [
   { name: "Python", level: 85, category: "Backend" },
   { name: "Node.js", level: 75, category: "Backend" },
   { name: "SQL & PostgreSQL", level: 80, category: "Database" },
-  { name: "Cloud Services (Azure/GCP)", level: 85, category: "Frontend" },
+  { name: "Cloud Services (Azure/GCP)", level: 85, category: "Cloud" },
   { name: "Data Analysis", level: 85, category: "AI/ML" },
 ];
 
