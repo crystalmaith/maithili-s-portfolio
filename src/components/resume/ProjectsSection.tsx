@@ -30,7 +30,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "Dungeons & Dragons — AI Dungeon Master",
+    title: "Dungeons & Dragons - AI Dungeon Master",
     description:
       "An interactive D&D game where an AI-powered Dungeon Master dynamically generates storylines, characters, and outcomes using agent-based reasoning.",
     tech: ["React", "LangChain", "LangGraph", "OpenAI API", "Firebase"],
