@@ -1,17 +1,17 @@
 import { useEffect, useState, useRef } from "react";
 
 const skills = [
-  { name: "React & TypeScript", level: 90, category: "Frontend" },
-  { name: "Python", level: 85, category: "Backend" },
-  { name: "Machine Learning", level: 80, category: "AI/ML" },
+  { name: "AI Agent Automations", level: 90, category: "AI/ML" },
   { name: "LangChain & LLMs", level: 85, category: "AI/ML" },
+  { name: "Machine Learning", level: 80, category: "AI/ML" },
+  { name: "Python", level: 85, category: "Backend" },
   { name: "Node.js", level: 75, category: "Backend" },
   { name: "SQL & PostgreSQL", level: 80, category: "Database" },
-  { name: "Tailwind CSS", level: 90, category: "Frontend" },
+  { name: "Cloud Services (Azure/GCP)", level: 85, category: "Frontend" },
   { name: "Data Analysis", level: 85, category: "AI/ML" },
 ];
 
-const categories = ["All", "Frontend", "Backend", "AI/ML", "Database"];
+const categories = ["All", "Cloud", "Backend", "AI/ML", "Database"];
 
 const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -119,19 +119,21 @@ const SkillsSection = () => {
             </h4>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                "Git",
-                "Docker",
-                "Firebase",
-                "MongoDB",
-                "REST APIs",
-                "GraphQL",
-                "Figma",
-                "Streamlit",
-                "NumPy",
-                "Pandas",
-                "OpenAI API",
-                "Vector DBs",
-              ].map((tech, index) => (
+  "Git",
+  "Docker",
+  "REST APIs",
+  "Streamlit",
+  "NumPy",
+  "Pandas",
+  "OpenAI API",
+  "Vector DBs",
+  "n8n",
+  "Azure",
+  "AWS",
+  "GCP",
+  "FastAPI",
+  "Agentic Workflows",
+].map((tech, index) => (
                 <span
                   key={tech}
                   className="px-4 py-2 bg-card text-primary font-sans text-sm rounded-full border border-border/50 hover:border-accent hover:text-accent transition-all duration-300 cursor-default opacity-0 animate-fade-up"
