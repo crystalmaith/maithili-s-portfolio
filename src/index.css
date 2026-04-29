@@ -150,12 +150,12 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground font-sans text-sm uppercase tracking-[0.15em] rounded-lg hover:bg-accent transition-all duration-300;
-  }
+  @apply inline-flex items-center justify-center px-3 py-1.5 bg-primary text-primary-foreground font-sans text-xs uppercase tracking-[0.10em] rounded-md hover:bg-accent transition-all duration-300;
+}
 
-  .btn-outline {
-    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary font-sans text-sm uppercase tracking-[0.15em] rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300;
-  }
+.btn-outline {
+  @apply inline-flex items-center justify-center px-3 py-1.5 border border-primary text-primary font-sans text-xs uppercase tracking-[0.10em] rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-300;
+}
 
   .icon-social {
     @apply w-10 h-10 flex items-center justify-center rounded-full border border-primary/20 text-primary hover:bg-accent hover:text-accent-foreground hover:border-accent transition-all duration-300;
